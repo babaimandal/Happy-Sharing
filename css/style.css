@@ -1,0 +1,784 @@
+@import url('https://fonts.googleapis.com/css2?family=Grand+Hotel&display=swap');
+*,
+*::after,
+*::before{
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+body{
+	padding: 0;
+	margin: 0;
+	font-family: 'Grand Hotel', cursive;
+	font-family: 'Montserrat Alternates', sans-serif;
+}
+ul,li{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+img{
+	display: block;
+	max-width: 100%;
+}
+a{
+	text-decoration: none;
+	display: inline-block;
+}
+/* ##################################
+				HEADER
+#################################### */
+header {
+    position: relative;
+    z-index: 999;
+}
+header .header-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .nav-flex {
+    display: flex;
+    gap: 64px;
+}
+header .logo-block {
+    color: #fff;
+    width: 186px;
+    font-weight: 700;
+}
+header .logo-block img {
+    display: block;
+    width: 183px;
+}
+header .nav-flex .nav-block nav ul {
+    display: flex;
+    gap: 40px;
+}
+header .nav-flex .nav-block nav ul li a {
+    color: #fff;
+    font-size: 25px;
+    font-weight: 400;
+}
+header .nav-flex .search-block {
+    color: #fff;
+    font-weight: 400;
+    font-size: 25px;
+}
+/* ##################################
+				BANNER
+#################################### */
+.banner {
+    height: 650px;
+    width: 100%;
+    background-color: #2F2F2F;
+    margin-top: -106px;
+    display: flex;
+    align-items: center;
+    gap: 122px;
+    position: relative;
+}
+.banner .lt-block{
+	height: 100%;
+
+}
+.banner .lt-block .box{
+	height: 100%;
+	position: relative;
+}
+.banner .lt-block .box::after {
+    content: '';
+    position: absolute;
+    background-image: url(../images/banner-shape.png );
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 500px;
+    height: 650px;
+    top: 0;
+    right: -347px;
+}
+.banner .lt-block .box img{
+	height: 100%;
+	object-fit: cover;
+}
+.banner .rt-block .text-block {
+	
+    position: relative;
+}
+.banner .rt-block .text-block h1 {
+    color: #FFC200;
+    font-family: 'Pacifico', cursive;
+    font-size: 77px;
+    margin: 0;
+}
+.banner .rt-block .text-block p {
+    color: #fff;
+    max-width: 600px;
+    font-size: 28px;
+    line-height: 32px;
+    padding: 50px 0 25px 0;
+}
+.banner .rt-block .text-block a {
+    background-color: #FFC200;
+    font-size: 15px;
+    font-weight: 600;
+    color: #fff;
+    padding: 13px 56px;
+    border-radius: 5px;
+}
+.desgin-element .element-1{
+    content: '';
+    position: absolute;
+    top: 73px;
+    left: 30%;
+}
+/* ###############
+	ANIMATION
+#################### */
+
+/* ANIMATION TYPE 01 */
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.element-1 {
+  animation: rotate 10s linear infinite;
+  width: 45px;
+  aspect-ratio: 1/1;
+}
+.element-4 {
+  animation: rotate 10s linear infinite;
+  width: 45px;
+  aspect-ratio: 1/1;
+}
+.element-5 {
+  animation: rotate 10s linear infinite;
+  width: 45px;
+  aspect-ratio: 1/1;
+}
+
+
+/* ANIMATION TYPE 02 */
+
+@keyframes shake {
+  0% {
+    transform: translateY(0);
+  }
+  10% {
+    transform: translateY(-10px);
+  }
+  20% {
+    transform: translateY(10px);
+  }
+  30% {
+    transform: translateY(-10px);
+  }
+  40% {
+    transform: translateY(10px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  60% {
+    transform: translateY(10px);
+  }
+  70% {
+    transform: translateY(-10px);
+  }
+  80% {
+    transform: translateY(10px);
+  }
+  90% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.element-10 {
+  animation: shake 15s cubic-bezier(0.36, 0.07, 0.19, 0.97) infinite;
+}
+.element-7 {
+  animation: shake 15s cubic-bezier(0.36, 0.07, 0.19, 0.97) infinite;
+}
+.element-2 {
+  animation: shake 15s cubic-bezier(1, 0.17, 0.19, 0.97) infinite;
+}
+.element-8 {
+  animation: shake 15s cubic-bezier(1, 0.17, 0.19, 0.97) infinite;
+}
+/* ANIMATION TYPE 03 */
+@keyframes shake2 {
+  0% {
+    transform: translateX(0);
+  }
+  10% {
+    transform: translateX(-10px);
+  }
+  20% {
+    transform: translateX(10px);
+  }
+  30% {
+    transform: translateX(-10px);
+  }
+  40% {
+    transform: translateX(10px);
+  }
+  50% {
+    transform: translateX(-10px);
+  }
+  60% {
+    transform: translateX(10px);
+  }
+  70% {
+    transform: translateX(-10px);
+  }
+  80% {
+    transform: translateX(10px);
+  }
+  90% {
+    transform: translateX(-10px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.element-6 {
+  animation: shake2 12s cubic-bezier(0.36, 0.07, 0.19, 0.97) infinite;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* ###############
+	ANIMATION
+#################### */
+.desgin-element .element-2 {
+    content: '';
+    position: absolute;
+    bottom: 10px;
+    left: 55%;
+}
+.desgin-element .element-3 {
+    content: '';
+    position: absolute;
+    bottom: 56px;
+    left: 75%;
+}
+.desgin-element .element-4 {
+    content: '';
+    position: absolute;
+    bottom: 25px;
+    left: 34%;
+}
+.desgin-element .element-5 {
+    content: '';
+    position: absolute;
+    bottom: 52%;
+    left: 80%;
+}
+.desgin-element .element-6 {
+    content: '';
+    position: absolute;
+    bottom: 0%;
+    left: 84%;
+}
+.desgin-element .element-7 {
+    content: '';
+    position: absolute;
+    bottom: 70%;
+    left: 80%;
+}
+.desgin-element .element-8 {
+    content: '';
+    position: absolute;
+    bottom: 42%;
+    left: 28%;
+}
+.desgin-element .element-10 {
+    content: '';
+    position: absolute;
+    bottom: 23%;
+    right: 6%;
+}
+
+/* ##################################
+			BEST SELLER
+#################################### */
+.best-seller-wrapper{
+	margin-block-start: 120px;
+}
+.best-seller-wrapper .heading {
+    text-align: center;
+    max-width: 681px;
+    margin-inline: auto;
+    margin-block-end: 62px;
+}
+.best-seller-wrapper .heading h2 {
+    color: #000;
+   	font-family: 'Grand Hotel', cursive;
+    font-size: 77px;
+    margin: 0;
+    font-weight: 100;
+    margin: 0;
+}
+.best-seller-wrapper .heading p {
+    color: #000;
+    margin: 0;
+    font-weight: 400;
+    margin: 0;
+    font-size: 22px;
+}
+.best-seller-wrapper .content-wrapper .image-block {
+    width: 190px;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: darkred;
+    margin-inline: auto;
+}
+.best-seller-wrapper .content-wrapper .image-block img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: center;
+}
+.best-seller-wrapper .content-wrapper .text-block{
+	text-align: center;
+}
+.best-seller-wrapper .content-wrapper .text-block h2 {
+    color: #000;
+   	font-family: 'Grand Hotel', cursive;
+    font-size: 50px;
+    margin: 0;
+    font-weight: 100;
+    margin: 0;
+}
+.best-seller-wrapper .content-wrapper .text-block p {
+    color: #000;
+    font-size: 22px;
+    margin: 0;
+    font-weight: 100;
+    margin: 0;
+    font-family: auto;
+}
+
+
+/* ##################################
+			ORIENTAL TASTE
+#################################### */
+.oriental-taste-wrapper {
+    position: relative;
+    margin-block-start: 266px;
+}
+.oriental-taste-wrapper .container{
+	overflow: hidden;
+}
+.oriental-taste-wrapper::before {
+    content: '';
+    position: absolute;
+    background-image: url(../images/wave-shape.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 588px;
+    top: -88px;
+    z-index: -1;
+}
+.oriental-taste-wrapper .row{
+	align-items: center;
+}
+.oriental-taste-wrapper .image-block {
+    width: 450px;
+    aspect-ratio: 1/1;
+    background-color: red;
+    border-radius: 50%;
+    overflow: hidden;
+}
+@keyframes rotate-food {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.oriental-taste-wrapper .image-block {
+  animation: rotate-food 20s linear infinite;
+}
+.chicken-grill-wrapper .image-block{
+  animation: rotate-food 20s linear infinite;
+}
+
+
+
+
+.oriental-taste-wrapper .text-block h2{
+	color: #FFC200;
+    font-family: 'Grand Hotel', cursive;
+    font-size: 77px;
+    margin: 0;
+}
+.oriental-taste-wrapper .text-block p {
+    color: #fff;
+    max-width: 600px;
+    font-size: 20px;
+    line-height: 32px;
+    padding: 26px 0 25px 0;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+.oriental-taste-wrapper .text-block a{
+	background-color: #FFC200;
+    font-size: 15px;
+    font-weight: 600;
+    color: #fff;
+    padding: 13px 108px;
+    border-radius: 5px;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+/* ##################################
+			STATISTICS
+#################################### */
+.statistics-wrapper {
+    padding-block-start: 140px;
+    background-color: #303030;
+    padding-block-end: 140px;
+    position: relative;
+}
+.statistics-wrapper .statistics-heading{
+	text-align: center;
+    max-width: 681px;
+    margin-inline: auto;
+    margin-block-end: 62px;
+}
+.statistics-wrapper .statistics-heading h2{
+	color: #FFC200;
+    font-family: 'Grand Hotel', cursive;
+    font-size: 77px;
+    margin: 0;
+    font-weight: 100;
+    margin: 0;
+}
+.statistics-wrapper .statistics-heading p{
+	color: #fff;
+    margin: 0;
+    font-weight: 400;
+    margin: 0;
+    font-size: 22px;
+}
+.statistics-wrapper .statistics-content .counter {
+    width: 181px;
+    aspect-ratio: 1/1;
+    border: 4px solid #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-inline: auto;
+}
+.statistics-wrapper .statistics-content .counter  p {
+    font-size: 37px;
+    font-weight: 800;
+    margin: 0;
+    color: #FFC200;
+}
+.statistics-wrapper .statistics-content .counter  span{
+	color: #fff;
+	font-size: 22px;
+	font-weight: 600;
+	margin: 0;
+}
+.statistics-wrapper .desgin-element .element-1{
+	position: absolute;
+
+}
+.statistics-wrapper .desgin-element .element-2 {
+    position: absolute;
+    left: 66%;
+}
+.statistics-wrapper .desgin-element .element-4 {
+    position: absolute;
+    left: 6%;
+}
+.statistics-wrapper .desgin-element .element-5 {
+    position: absolute;
+    left: 89%;
+}
+.statistics-wrapper .desgin-element .element-6{
+	position: absolute;
+	
+}
+.desgin-element .element-3{
+	display: none;
+}
+.statistics-wrapper .desgin-element .element-7 {
+    position: absolute;
+    top: 8%;
+    left: 74%;
+}
+.statistics-wrapper .desgin-element .element-8 {
+    position: absolute;
+    left: 8%;
+    top: 25%;
+}
+.statistics-wrapper .desgin-element .element-9 {
+    position: absolute;
+    left: 25%;
+    bottom: 0%;
+}
+
+
+
+
+/* ##################################
+			CHICKEN GRILL
+#################################### */
+
+
+.chicken-grill-wrapper {
+    position: relative;
+    padding-block-start: 85px;
+}
+.chicken-grill-wrapper .container{
+	overflow: hidden;
+}
+.chicken-grill-wrapper::after {
+    content: '';
+    position: absolute;
+    background-image: url(../images/wave-shape2.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 787px;
+    top: -107px;
+    z-index: -1;
+}
+.chicken-grill-wrapper .row{
+	align-items: center;
+}
+.chicken-grill-wrapper .image-block{
+	width: 450px;
+	aspect-ratio: 1/1;
+	background-color: red;
+	border-radius: 50%;
+	margin-inline: auto;
+	overflow: hidden;
+}
+.chicken-grill-wrapper .text-block-wrapper{
+	display: flex;
+	justify-content: end;
+}
+.chicken-grill-wrapper .text-block h2{
+	color: #FFC200;
+    font-family: 'Grand Hotel', cursive;
+    font-size: 77px;
+    margin: 0;
+}
+.chicken-grill-wrapper .text-block p {
+    color: #fff;
+    max-width: 600px;
+    font-size: 20px;
+    line-height: 32px;
+    padding: 26px 0 25px 0;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+.chicken-grill-wrapper .text-block a {
+    background-color: #FFC200;
+    font-size: 15px;
+    font-weight: 600;
+    color: #fff;
+    padding: 13px 108px;
+    border-radius: 5px;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+
+/* ##################################
+			LENORA FIELDS
+#################################### */
+.lenora-wrapper {
+    margin-block-start: 240px;
+    background-image: linear-gradient( rgb(255 204 0 / 75%), rgb(255 201 31 / 75%) ), url(../images/bg-image.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.lenora-wrapper .text-block {
+    text-align: center;
+    max-width: 692px;
+}
+.lenora-wrapper .text-block p {
+    color: #000;
+    margin: 0;
+    font-weight: 700;
+    margin: 0;
+    font-size: 22px;
+}
+.lenora-wrapper .text-block h2{
+	color: #000;
+    font-family: 'Grand Hotel', cursive;
+    font-size: 77px;
+    margin: 0;
+    font-weight: 100;
+    margin: 0;
+}
+
+
+
+/* ##################################
+			SUBSCRIBE
+#################################### */
+.subcribe-wrapper {
+    background-image: url(../images/bg-element.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 700px;
+}
+.subcribe-wrapper .container{
+	height: 100%;
+}
+.subcribe-content-wraper{
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.subcribe-wrapper .text-block {
+    text-align: center;
+    max-width: 692px;
+    margin-inline: auto;
+    margin-block-end: 41px;
+}
+.subcribe-wrapper .text-block p{
+	color: #000;
+    margin: 0;
+    font-weight: 700;
+    margin: 0;
+    font-size: 22px;
+}
+.subcribe-wrapper .text-block h2{
+	color: #000;
+    font-family: 'Grand Hotel', cursive;
+    font-size: 77px;
+    margin: 0;
+    font-weight: 100;
+    margin: 0;
+}
+.subcribe-wrapper .input-wrapper form{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
+.subcribe-wrapper input{
+	
+	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.subcribe-wrapper .form-control {
+    max-width: 600px;
+    padding-block: 11px;
+    border-radius: 5px 0 0 5px;
+}
+.subcribe-wrapper .form-control:focus{
+	border: 1px solid #ddd;
+	box-shadow: none;
+}
+.subcribe-wrapper  button{
+	background-color: #FFC200;
+	padding-inline: 27px;
+	padding-block: 12px;
+	color: #000;
+	font-weight: 600;
+	border: none;
+	outline: none;
+
+}
+.subcribe-wrapper  button:active{
+	transform: scale(0.96);
+}
+
+/* ##################################
+				FOOTER
+#################################### */
+footer	{
+	background: #303030;
+	padding-block: 150px;
+}
+footer .footer-content-wrapper .footer-logo img {
+    width: 168px;
+}
+footer .footer-content-wrapper .footer-logo-text p {
+    color: #fff;
+    font-weight: 400;
+    font-size: 16px;
+    padding-block-end: 18px;
+    padding-block-start: 20px;
+    max-width: 445px;
+}
+footer .footer-content-wrapper .footer-social-icon{
+	display: flex;
+	gap: 10px;
+}
+footer .footer-content-wrapper .footer-social-icon a{
+	width: 50px;
+	aspect-ratio: 1/1;
+	background-color: #fff;
+	border-radius: 50%;
+}
+footer .about-wrapper{
+
+}
+footer .about-content h2 {
+    color: #fff;
+    font-weight: 600;
+    font-size: 25px;
+    margin-block-end: 27px;
+}
+footer .about-content ul{
+	margin: 0;
+	padding: 0;
+}
+footer .about-content ul li a {
+    color: #fff;
+    font-weight: 400;
+    font-size: 16px;
+    padding-block-end: 14px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
